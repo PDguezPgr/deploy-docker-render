@@ -1,0 +1,6 @@
+services:
+  - type: web                        # servicio web con URL pública
+    name: hello-docker               # nombre del servicio (sale en la URL)
+    runtime: docker                  # construye la imagen con tu Dockerfile
+    plan: free                       # plan gratuito
+    healthCheckPath: /_stcore/health # ruta que Render consulta para saber si la app está viva
